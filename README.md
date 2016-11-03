@@ -21,3 +21,17 @@ Escribir un programa Java con hebras para el problema del barbero durmiente. La 
 El barbero llama a siguienteCliente para esperar la llegada de
   un nuevo cliente y servirlo.
 Cuando el barbero termina de pelar al cliente actual llama a finCliente, indicándole que puede salir de la barbería y esperando a que lo haga para pasar al siguiente cliente.
+
+### Práctica 3 ###
+
+#### Problema 1 ####
+
+Extender el programa MPI anteriormente presentado que implementa el productor-consumidor con buffer acotado (los fuentes del programa se proporcionan junto con el guión de prácticas) para que el proceso buffer de servicio a 5 productores y 4 consumidores. Para ello, se lanzarán 10 procesos y asumiremos que los procesos 0 . . . 4 son productores, el proceso Buffer es el proceso 5 y el resto de procesos en el comunicador universal (6 . . . 9) son consumidores.
+
+
+#### Problema 2 ####
+
+  Implementar una solución distribuida al problema de los filósofos de acuerdo con el esquema descrito en las plantillas. Usar la operación síncrona de envío MPI_Ssend para realizar las peticiones y liberaciones de tenedores.
+  El esquema propuesto (cada filósofo coge primero el tenedor de su izquierda y después el de la derecha) puede conducir a interbloqueo. Identificar la secuencia de peticiones de filósofos que conduce a interbloqueo en el programa y realizar pequen ̃as modificaciones en el programa (y en el comportamiento de las entidades que participan) que eliminan la posibilidad de interbloqueo (sin añadir nuevos procesos).
+
+  
